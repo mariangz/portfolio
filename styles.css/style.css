@@ -1,0 +1,17 @@
+:root {
+  --main-beige: #E9E7DB;
+  --main-green: #2F7201;
+  --main-blue: #0A4A91;
+  --main-yellow: #FBEB7C;
+  --main-red: #BA171A;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font scroll-behavior: smooth;
+}
