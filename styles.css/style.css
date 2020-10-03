@@ -12,6 +12,7 @@
   box-sizing: border-box;
 }
 
+/* ********** GLOBAL ********** */
 body {
   font-family: 'Nunito', sans-serif;
   scroll-behavior: smooth;
@@ -41,8 +42,8 @@ p {
   display: inline;
 }
 
+/* ********** WELCOME ********** */
 .welcome {
-  width: 100%;
   height: 100vh;
   /* border: solid 2px red; */
   font-size: 3rem;
@@ -68,4 +69,18 @@ p {
   bottom: 16rem;
   left: 39rem;
   z-index: -1;
+}
+
+/* ********** SECTION WORK ********** */
+.work {
+  background-image: url(/images/background-ornament.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+article {
+  width: 250px;
+  height: 250px;
+  background-color: violet;
 }
