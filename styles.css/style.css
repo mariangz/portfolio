@@ -18,23 +18,38 @@ body {
   scroll-behavior: smooth;
 }
 
-
-header ul {
-  display: flex;
-  /* border: solid 2px red; */
-  justify-content: end;
+/* ********** HEADER ********** */
+header .container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1.5rem;
+  height: 100vh;
 }
 
 nav {
-  margin-right: 3rem;
-  margin-top: 2rem;
+  grid-column: 10 / span 3;
   font-weight: bold;
   font-size: 1.1rem;
+  border: solid 2px red;
 }
 
-nav ul li+li {
-  margin-left: 1.8rem;
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+}
 
+.welcome {
+  grid-column: 1 / span 12;
+  border: solid 2px red;
+}
+
+.text {
+  max-width: 750px;
+  grid-column: 1 / span 9;
+  padding-top: 20rem;
+  position: relative;
+  line-height: 1.5;
+  font-size: 3rem;
 }
 
 h1,
@@ -43,20 +58,14 @@ p {
 }
 
 /* ********** WELCOME ********** */
-.welcome {
+/* .welcome {
   height: 100vh;
-  /* border: solid 2px red; */
-  font-size: 3rem;
-  font-weight: 700;
-}
+  /* border: solid 2px red; 
+font-size: 3rem;
+font-weight: 700;
+}*/
 
-.text {
-  width: 70%;
-  padding-top: 20rem;
-  position: relative;
-  line-height: 1.5;
-  margin-left: 11rem;
-}
+
 
 .name {
   color: var(--main-green);
@@ -67,20 +76,31 @@ p {
   width: 500px;
   position: absolute;
   bottom: 16rem;
-  left: 39rem;
+  left: 36rem;
   z-index: -1;
 }
 
 /* ********** SECTION WORK ********** */
-.work {
+/* .work {
   background-image: url(/images/background-ornament.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-article {
+.work article {
   width: 250px;
   height: 250px;
   background-color: violet;
 }
+
+.work .container {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+} */
+
+/* .one {
+  margin-left: 11rem;
+  border: 2px solid red;
+} */
