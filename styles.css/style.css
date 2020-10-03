@@ -31,6 +31,13 @@ header .container {
   background-size: 50%;
 }
 
+header {
+  background-image: url(/images/background-ornament-header.svg);
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  background-size: 15%;
+}
+
 nav {
   grid-column: 10 / span 3;
   font-size: 1.1rem;
@@ -66,15 +73,6 @@ p {
   color: var(--main-green);
 }
 
-/* .ornament {
-  height: 500px;
-  width: 500px;
-  position: absolute;
-  bottom: 16rem;
-  left: 36rem;
-  z-index: -1;
-} */
-
 /* ********** SECTION WORK ********** */
 .work {
   background-color: var(--main-beige);
@@ -88,27 +86,45 @@ p {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 100px);
-  grid-gap: 1.5rem;
+}
 
+.txt {
+  width: 80%;
+  grid-gap: 1.5rem;
+  color: #fff;
+  padding-top: 3rem;
+  margin-left: 2rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.two .txt {
+  color: #000;
+}
+
+h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-weight: 800;
 }
 
 .one {
-  grid-column: 2 / span 4;
+  grid-column: 2 / span 3;
   grid-row: 2 / span 3;
   background-color: var(--main-blue);
 }
 
 .two {
-  grid-column: 8 / span 4;
+  grid-column: 9 / span 3;
   grid-row: 5 / span 3;
   background-color: var(--main-yellow);
+
 }
 
 .three {
-  grid-column: 2 / span 4;
+  grid-column: 2 / span 3;
   grid-row: 7 / span 3;
   background-color: var(--main-red);
-  margin-left: 1.3rem;
 }
 
 footer img {
