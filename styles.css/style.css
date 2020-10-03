@@ -13,5 +13,59 @@
 }
 
 body {
-  font scroll-behavior: smooth;
+  font-family: 'Nunito', sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+header ul {
+  display: flex;
+  /* border: solid 2px red; */
+  justify-content: end;
+}
+
+nav {
+  margin-right: 3rem;
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+nav ul li+li {
+  margin-left: 1.8rem;
+
+}
+
+h1,
+p {
+  display: inline;
+}
+
+.welcome {
+  width: 100%;
+  height: 100vh;
+  /* border: solid 2px red; */
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.text {
+  width: 70%;
+  padding-top: 20rem;
+  position: relative;
+  line-height: 1.5;
+  margin-left: 11rem;
+}
+
+.name {
+  color: var(--main-green);
+}
+
+.ornament {
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  bottom: 16rem;
+  left: 39rem;
+  z-index: -1;
 }
