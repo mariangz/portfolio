@@ -16,7 +16,6 @@
 body {
   font-family: 'Nunito', sans-serif;
   scroll-behavior: smooth;
-  max-width: 1200px;
 }
 
 /* ********** HEADER ********** */
@@ -24,8 +23,12 @@ header .container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 1.5rem;
-  height: 100vh;
+  min-height: 100vh;
   font-weight: bold;
+  background-image: url(/images/header-ornament.svg);
+  background-position: 85% 35%;
+  background-repeat: no-repeat;
+  background-size: 50%;
 }
 
 nav {
@@ -37,13 +40,13 @@ nav {
 
 nav ul {
   display: flex;
-  border: solid 2px red;
+  gap: 1.5rem;
+
 }
 
+
 .welcome {
-  grid-column: 1 / span 9;
-  /* border: solid 2px red; */
-  margin-left: 1.5rem;
+  grid-column: 2 / span 9;
 }
 
 .text {
@@ -63,14 +66,14 @@ p {
   color: var(--main-green);
 }
 
-.ornament {
+/* .ornament {
   height: 500px;
   width: 500px;
   position: absolute;
   bottom: 16rem;
   left: 36rem;
   z-index: -1;
-}
+} */
 
 /* ********** SECTION WORK ********** */
 .work {
@@ -81,19 +84,34 @@ p {
   background-size: cover;
 }
 
-.work article {
-  width: 250px;
-  height: 250px;
-  background-color: violet;
-}
-
 .work .container {
-  border: 2px solid red;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 100px);
+  grid-gap: 1.5rem;
+
 }
 
 .one {
-  margin-left: 11rem;
-  border: 2px solid red;
+  grid-column: 2 / span 4;
+  grid-row: 2 / span 3;
+  background-color: var(--main-blue);
+}
+
+.two {
+  grid-column: 8 / span 4;
+  grid-row: 5 / span 3;
+  background-color: var(--main-yellow);
+}
+
+.three {
+  grid-column: 2 / span 4;
+  grid-row: 7 / span 3;
+  background-color: var(--main-red);
+  margin-left: 1.3rem;
+}
+
+footer img {
+  width: 400px;
+  height: auto;
 }
