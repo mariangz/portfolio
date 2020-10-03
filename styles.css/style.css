@@ -16,6 +16,7 @@
 body {
   font-family: 'Nunito', sans-serif;
   scroll-behavior: smooth;
+  max-width: 1200px;
 }
 
 /* ********** HEADER ********** */
@@ -24,29 +25,31 @@ header .container {
   grid-template-columns: repeat(12, 1fr);
   grid-gap: 1.5rem;
   height: 100vh;
+  font-weight: bold;
+  border: 4px solid green;
 }
 
 nav {
   grid-column: 10 / span 3;
-  font-weight: bold;
   font-size: 1.1rem;
-  border: solid 2px red;
+  margin-top: 1rem;
+  /* border: solid 2px red; */
 }
 
 nav ul {
   display: flex;
   gap: 1.5rem;
+  /* border: solid 2px red; */
 }
 
 .welcome {
-  grid-column: 1 / span 12;
-  border: solid 2px red;
+  grid-column: 1 / span 9;
+  /* border: solid 2px red; */
+  margin-left: 1.5rem;
 }
 
 .text {
   max-width: 750px;
-  grid-column: 1 / span 9;
-  padding-top: 20rem;
   position: relative;
   line-height: 1.5;
   font-size: 3rem;
@@ -56,16 +59,6 @@ h1,
 p {
   display: inline;
 }
-
-/* ********** WELCOME ********** */
-/* .welcome {
-  height: 100vh;
-  /* border: solid 2px red; 
-font-size: 3rem;
-font-weight: 700;
-}*/
-
-
 
 .name {
   color: var(--main-green);
