@@ -17,12 +17,12 @@
     <div class="container">
       <nav>
         <ul>
-          <li class="about">About</li>
-          <li class="wout">Work</li>
-          <li class="contact">Contact</li>
+          <li> <a href="#welcome">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <section class="welcome">
+      <section id="welcome" class="welcome">
         <div class="text">
           <h1>Hi, I'm <span class="name">Mariano Giménez</span>.</h1>
           <p>I'm an aspiring web developer, showcasing my recent practice projects and development explorations here.
@@ -33,7 +33,7 @@
   </header>
   <main>
     <!-- ********** WORK ********** -->
-    <section class="work">
+    <section id="work" class="work">
       <div class="container">
         <article class="one">
           <div class="txt">
@@ -65,15 +65,24 @@
     </section>
     <footer>
       <!-- ********** CONTACT ********** -->
-      <article class="contact">
-        <h2>Contacto</h2>
-        <p>I am looking for the opportunity to practice my web development skills in an intership, or in small
-          freelance
-          projects. You think we should talk? <a href="mailto:marianosgimenez@gmail.com">Send me an email</a> or
-          contact
-          via LinkedIn.</p>
-      </article>
-      <img src="/images/foto.jpg" alt="foto de Mariano en el museo">
+      <div id="contact" class="container">
+        <div class="blue">
+          <img src="/images/background-ornament-blue.svg" alt="blue ornament">
+        </div>
+        <article class="contact">
+          <div class="txt">
+            <h2>Contact</h2>
+            <p>I am looking for the opportunity to practice my web development skills in an intership, or in small
+              freelance
+              projects. You think we should talk? <a href="mailto:marianosgimenez@gmail.com">Send me an email</a> or
+              contact
+              via LinkedIn.</p>
+          </div>
+        </article>
+        <div class="foto">
+          <img src="/images/foto.jpg" alt="foto de Mariano en el museo">
+        </div>
+      </div>
 
       </section>
   </main>
