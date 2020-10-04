@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
   <link rel="stylesheet" href="styles.css/reset.css">
   <link rel="stylesheet" href="styles.css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,800;1,700&display=swap"
@@ -17,12 +18,12 @@
     <div class="container">
       <nav>
         <ul>
-          <li> <a href="#welcome">About</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li class="link-one"><a href="#welcome-section">About</a></li>
+          <li class="link-two"><a href="#projects">Work</a></li>
+          <li class="link-three"> <a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <section id="welcome" class="welcome">
+      <section id="welcome-section" class="welcome">
         <div class="text">
           <h1>Hi, I'm <span class="name">Mariano Giménez</span>.</h1>
           <p>I'm an aspiring web developer, showcasing my recent practice projects and development explorations here.
@@ -33,34 +34,44 @@
   </header>
   <main>
     <!-- ********** WORK ********** -->
-    <section id="work" class="work">
+    <section id="projects" class="work">
       <div class="container">
-        <article class="one">
-          <div class="txt">
-            <h2>1</h2>
-            <p>Caloncho</p>
-            <p>Fictional Artist Fan Website. In this project, I experimented with CSS Gradients, responsive images and
-              tried
-              out Flexbox for the first time. </p>
-          </div>
-        </article>
-        <article class="two">
-          <div class="txt">
-            <h2>2</h2>
-            <p>Catena Restaurant</p>
-            <p>Fictional Form Website. In this project, the idea was create a form by using several commom elements for
-              a
-              fictional restaurant.</p>
-          </div>
-        </article>
-        <article class="three">
-          <div class="txt">
-            <h2>3</h2>
-            <p>Güíd</p>
-            <p>Fictional Store Website. In this project I used some transition effects, a slightly different than
-              traditional gallery design and a simple form.</p>
-          </div>
-        </article>
+        <a class="one" target="_blank" href="https://caloncho.vercel.app/">
+          <article class="bl project-tile">
+            <div class="txt">
+              <h2>1</h2>
+              <p>Caloncho</p>
+              <p>Fictional Artist Fan Website. In this project, I experimented with CSS Gradients, responsive images and
+                tried
+                out Flexbox for the first time.</p>
+            </div>
+
+          </article>
+        </a>
+
+
+        <a class="two" target="_blank" href="https://catena-restaurant-form.vercel.app/">
+          <article class="ylw project-tile">
+            <div class="txt">
+              <h2>2</h2>
+              <p>Catena Restaurant</p>
+              <p>Fictional Form Website. In this project, the idea was create a form by using several commom elements
+                for
+                a
+                fictional restaurant.</p>
+            </div>
+          </article>
+        </a>
+        <a class="three" target="_blank" href="https://guid.vercel.app/">
+          <article class="red project-tile">
+            <div class="txt">
+              <h2>3</h2>
+              <p>Güíd</p>
+              <p>Fictional Store Website. In this project I used some transition effects, a slightly different than
+                traditional gallery design and a simple form.</p>
+            </div>
+          </article>
+        </a>
       </div>
     </section>
     <footer>
@@ -74,9 +85,10 @@
             <h2>Contact</h2>
             <p>I am looking for the opportunity to practice my web development skills in an intership, or in small
               freelance
-              projects. You think we should talk? <a href="mailto:marianosgimenez@gmail.com">Send me an email</a> or
-              contact
-              via LinkedIn.</p>
+              projects. <a class="link" href="https://www.freecodecamp.org/mariangz">More projects here</a> You think we
+              should talk?
+              <a target="_blank" class="mail" href="mailto:marianosgimenez@gmail.com">Send me an
+                email</a>.</p>
           </div>
         </article>
         <div class="foto">
