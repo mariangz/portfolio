@@ -59,6 +59,10 @@ nav ul li:last-child {
   margin-right: .9rem;
 }
 
+nav ul li+li {
+  margin-left: .8rem;
+}
+
 /* ********** WELCOME ********** */
 .text {
   padding-top: 10rem;
