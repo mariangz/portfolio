@@ -225,6 +225,7 @@ footer .container {
     background-size: 10rem;
     display: flex;
     justify-content: right;
+    min-height: 100vh;
   }
 
   nav {
@@ -256,6 +257,7 @@ footer .container {
   /* ********** WELCOME ********** */
   .welcome {
     grid-column: 2 / span 9;
+    padding-top: 13rem;
   }
 
   .text {
